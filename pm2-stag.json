@@ -15,7 +15,7 @@
       },
       "env_production": {
         "NODE_ENV": "production",
-        "PORT": 6010,
+        "PORT": 6610,
         "HOST_PATH": "api-stg.solareum.app"
       }
     }
