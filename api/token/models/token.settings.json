@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tokens",
+  "info": {
+    "name": "Token"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "token": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "tokens"
+    },
+    "created_at": {
+      "type": "datetime"
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}
