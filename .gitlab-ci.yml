@@ -10,9 +10,9 @@ deploy_stag:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - mkdir -p _deploy
+    - echo $SSH_PRIVATE_KEY
     - echo -e "$SSH_PRIVATE_KEY" > _deploy/goingsunny-sg.pem
     - chmod 700 _deploy/goingsunny-sg.pem
-    - cat _deploy/goingsunny-sg.pem
     - ssh-keyscan -t rsa 18.136.118.58 >> ~/.ssh/known_hosts
   script:
     - npm run deploy:stag
