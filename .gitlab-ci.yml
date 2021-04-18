@@ -7,7 +7,6 @@ deploy_stag:
   stage: deploy
   before_script:
     # generate ssh key
-    - export
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - mkdir -p _deploy
