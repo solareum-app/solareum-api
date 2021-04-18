@@ -12,6 +12,7 @@ deploy_stag:
     - mkdir -p _deploy
     - echo "hello"
     - echo $SSH_PRIVATE_KEY
+    - echo $TEST
     - echo "$SSH_PRIVATE_KEY"
     - echo -e "$SSH_PRIVATE_KEY" > _deploy/goingsunny-sg.pem
     - chmod 700 _deploy/goingsunny-sg.pem
