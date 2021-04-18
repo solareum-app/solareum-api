@@ -19,6 +19,10 @@ deploy_stag:
     - chmod 700 _deploy/goingsunny-sg.pem
     - ssh-keyscan -t rsa 18.136.118.58 >> ~/.ssh/known_hosts
   script:
+    - echo "hello"
+    - export
+    - echo $SSH_PRIVATE_KEY
+    - echo $TEST
     - npm run deploy:stag
   only:
     - develop
