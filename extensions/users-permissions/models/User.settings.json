@@ -60,8 +60,81 @@
       "configurable": false
     },
     "tokens": {
+      "collection": "token",
+      "via": "user"
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "nick_name": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "id_type": {
+      "type": "string"
+    },
+    "id_number": {
+      "type": "string"
+    },
+    "poi_img_url": {
+      "type": "string"
+    },
+    "poa_img_url": {
+      "type": "string"
+    },
+    "selfie_img_url": {
+      "type": "string"
+    },
+    "telegram_id": {
+      "type": "string"
+    },
+    "is_verified_telegram": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "is_verified_phone": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "success_trade": {
+      "type": "integer"
+    },
+    "total_trade": {
+      "type": "integer"
+    },
+    "avg_time": {
+      "type": "decimal"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "created_at": {
+      "type": "datetime"
+    },
+    "updated_at": {
+      "type": "datetime"
+    },
+    "wallets": {
       "via": "user",
-      "collection": "token"
+      "collection": "wallet"
+    },
+    "payments": {
+      "via": "user",
+      "collection": "payment"
+    },
+    "orders": {
+      "via": "user",
+      "collection": "order"
+    },
+    "trades": {
+      "via": "staff",
+      "collection": "trade"
     }
   }
 }
