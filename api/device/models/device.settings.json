@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "devices",
+  "info": {
+    "name": "Device"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "device_id": {
+      "type": "string"
+    },
+    "sol_address": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "datetime"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

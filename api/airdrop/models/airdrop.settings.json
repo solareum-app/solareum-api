@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "airdrops",
+  "info": {
+    "name": "airdrop"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "device_id": {
+      "type": "string"
+    },
+    "sol_address": {
+      "type": "string"
+    },
+    "xsb_address": {
+      "type": "string"
+    },
+    "value": {
+      "type": "biginteger"
+    },
+    "scale": {
+      "type": "integer",
+      "default": 9
+    },
+    "currency": {
+      "type": "string",
+      "default": "XSB"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "airdrop",
+        "mission",
+        "referral_fee"
+      ]
+    },
+    "source": {
+      "type": "json"
+    },
+    "created_at": {
+      "type": "datetime"
+    }
+  }
+}
