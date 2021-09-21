@@ -7,8 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-
     "login": "ssh -i _deploy/goingsunny-sg.pem centos@18.136.118.58",
+    "login:hummingbot": "ssh -i _deploy/hummingbot.pem ubuntu@13.250.127.203",
     "deploy:prod": "npm run login 'cd prod/solareum-api && git reset --hard && git checkout master && git pull && yarn install && yarn run build && pm2 startOrRestart pm2-prod.json --env production'",
     "deploy:stag": "npm run login 'cd stag/solareum-api && git reset --hard && git checkout develop && git pull && yarn install && yarn run build && pm2 startOrRestart pm2-stag.json --env production'",
     "strapi": "strapi"

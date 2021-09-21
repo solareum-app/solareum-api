@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/airdrops",
+      "handler": "airdrop.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/airdrops/count",
+      "handler": "airdrop.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/airdrops/:id",
+      "handler": "airdrop.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/airdrops",
+      "handler": "airdrop.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/airdrops/:id",
+      "handler": "airdrop.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/airdrops/:id",
+      "handler": "airdrop.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
