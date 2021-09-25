@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "airdrops",
   "info": {
-    "name": "airdrop"
+    "name": "airdrop",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,15 +17,8 @@
     "sol_address": {
       "type": "string"
     },
-    "xsb_address": {
-      "type": "string"
-    },
     "value": {
       "type": "biginteger"
-    },
-    "scale": {
-      "type": "integer",
-      "default": 9
     },
     "currency": {
       "type": "string",
@@ -34,8 +28,8 @@
       "type": "enumeration",
       "enum": [
         "airdrop",
-        "mission",
-        "referral_fee"
+        "referral",
+        "mission"
       ]
     },
     "source": {
@@ -43,6 +37,12 @@
     },
     "created_at": {
       "type": "datetime"
+    },
+    "signature": {
+      "type": "string"
+    },
+    "sending_account": {
+      "type": "string"
     }
   }
 }
