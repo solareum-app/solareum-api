@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blacklists",
+      "handler": "blacklist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blacklists/count",
+      "handler": "blacklist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blacklists/:id",
+      "handler": "blacklist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blacklists",
+      "handler": "blacklist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blacklists/:id",
+      "handler": "blacklist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blacklists/:id",
+      "handler": "blacklist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

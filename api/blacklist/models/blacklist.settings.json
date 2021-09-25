@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blacklists",
+  "info": {
+    "name": "Blacklist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sol_address": {
+      "type": "string"
+    },
+    "note": {
+      "type": "richtext"
+    },
+    "created_at": {
+      "type": "datetime"
+    }
+  }
+}
