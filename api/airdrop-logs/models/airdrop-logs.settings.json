@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "airdrop_logs",
+  "info": {
+    "name": "AirdropLogs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "created_at": {
+      "type": "datetime"
+    },
+    "payload": {
+      "type": "json"
+    },
+    "sol_address": {
+      "type": "string"
+    },
+    "ref_address": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "check",
+        "airdrop"
+      ]
+    }
+  }
+}
