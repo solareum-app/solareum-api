@@ -12,19 +12,23 @@
   },
   "attributes": {
     "created_at": {
-      "type": "datetime"
+      "type": "datetime",
+      "index": true
     },
     "payload": {
       "type": "json"
     },
     "sol_address": {
-      "type": "string"
+      "type": "string",
+      "index": true
     },
     "ref_address": {
-      "type": "string"
+      "type": "string",
+      "index": true
     },
     "type": {
       "type": "enumeration",
+      "index": true,
       "enum": [
         "check",
         "airdrop"

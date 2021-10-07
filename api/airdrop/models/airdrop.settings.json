@@ -12,20 +12,24 @@
   },
   "attributes": {
     "device_id": {
-      "type": "string"
+      "type": "string",
+      "index": true
     },
     "sol_address": {
-      "type": "string"
+      "type": "string",
+      "index": true
     },
     "value": {
       "type": "biginteger"
     },
     "currency": {
       "type": "string",
-      "default": "XSB"
+      "default": "XSB",
+      "index": true
     },
     "type": {
       "type": "enumeration",
+      "index": true,
       "enum": [
         "airdrop",
         "referral",
@@ -36,13 +40,16 @@
       "type": "json"
     },
     "created_at": {
-      "type": "datetime"
+      "type": "datetime",
+      "index": true
     },
     "signature": {
-      "type": "string"
+      "type": "string",
+      "index": true
     },
     "sending_account": {
-      "type": "string"
+      "type": "string",
+      "index": true
     }
   }
 }
