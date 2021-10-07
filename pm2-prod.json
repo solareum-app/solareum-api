@@ -1,9 +1,9 @@
 {
   "apps": [
     {
-      "exec_mode": "fork_mode",
       "name": "prd-solareum-api",
       "script": "node_modules/strapi/bin/strapi.js",
+      "exec_mode": "cluster",
       "instances": "max",
       "args": "start",
       "watch": false,
