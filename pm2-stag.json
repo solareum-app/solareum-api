@@ -4,6 +4,7 @@
       "exec_mode": "fork_mode",
       "name": "stg-solareum-api",
       "script": "node_modules/strapi/bin/strapi.js",
+      "instances": 2,
       "args": "start",
       "watch": false,
       "ignore_watch": [
