@@ -3,7 +3,7 @@
     {
       "name": "stg-solareum-api",
       "script": "node_modules/strapi/bin/strapi.js",
-      "exec_mode": "cluster",
+      "exec_mode": "fork_mode",
       "instances": 2,
       "args": "start",
       "watch": false,
