@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "settings",
+  "info": {
+    "name": "Settings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "index": true,
+      "unique": true
+    },
+    "settings": {
+      "type": "json"
+    },
+    "created_at": {
+      "type": "datetime",
+      "index": true
+    }
+  }
+}
