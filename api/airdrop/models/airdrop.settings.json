@@ -20,7 +20,7 @@
       "index": true
     },
     "value": {
-      "type": "biginteger"
+      "type": "float"
     },
     "currency": {
       "type": "string",
