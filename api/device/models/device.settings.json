@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "devices",
   "info": {
-    "name": "Device"
+    "name": "Device",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,16 +12,23 @@
   },
   "attributes": {
     "device_id": {
-      "type": "string"
-    },
-    "sol_address": {
-      "type": "string"
+      "type": "string",
+      "index": true
     },
     "created_at": {
-      "type": "datetime"
+      "type": "datetime",
+      "index": true
     },
     "version": {
-      "type": "string"
+      "type": "string",
+      "index": true
+    },
+    "address_list": {
+      "type": "string",
+      "index": true
+    },
+    "source": {
+      "type": "json"
     }
   }
 }
