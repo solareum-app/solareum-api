@@ -11,6 +11,12 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "signature": {
+      "type": "string",
+      "required": true,
+      "index": true,
+      "unique": true
+    },
     "sol_address": {
       "type": "string",
       "index": true
@@ -33,10 +39,6 @@
     },
     "b_qty": {
       "type": "float"
-    },
-    "signature": {
-      "type": "string",
-      "index": true
     },
     "status": {
       "type": "enumeration",
