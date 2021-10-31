@@ -10,6 +10,12 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "sol_address": {
+      "type": "string",
+      "required": true,
+      "index": true,
+      "unique": true
+    },
     "nominated_by": {
       "type": "string",
       "index": true
@@ -19,10 +25,6 @@
       "index": true
     },
     "device_id": {
-      "type": "string",
-      "index": true
-    },
-    "sol_address": {
       "type": "string",
       "index": true
     },
