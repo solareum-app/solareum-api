@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "purchases",
+  "info": {
+    "name": "purchase",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sol_address": {
+      "type": "string",
+      "index": true
+    },
+    "market": {
+      "type": "enumeration",
+      "index": true,
+      "enum": [
+        "XSBUSDC"
+      ]
+    },
+    "qty": {
+      "type": "float"
+    },
+    "value": {
+      "type": "float"
+    },
+    "b_value": {
+      "type": "float"
+    },
+    "b_qty": {
+      "type": "float"
+    },
+    "signature": {
+      "type": "string",
+      "index": true
+    },
+    "status": {
+      "type": "enumeration",
+      "index": true,
+      "enum": [
+        "new",
+        "error",
+        "processing",
+        "completed"
+      ]
+    },
+    "recipient": {
+      "type": "string",
+      "index": true
+    },
+    "source": {
+      "type": "json"
+    },
+    "created_at": {
+      "type": "datetime",
+      "index": true
+    },
+    "updated_at": {
+      "type": "datetime",
+      "index": true
+    }
+  }
+}

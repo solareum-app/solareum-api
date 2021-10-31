@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallets",
+  "info": {
+    "name": "wallet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nominated_by": {
+      "type": "string",
+      "index": true
+    },
+    "mission_completed": {
+      "type": "biginteger",
+      "index": true
+    },
+    "device_id": {
+      "type": "string",
+      "index": true
+    },
+    "sol_address": {
+      "type": "string",
+      "index": true
+    },
+    "created_at": {
+      "type": "datetime",
+      "index": true
+    },
+    "source": {
+      "type": "json"
+    }
+  }
+}

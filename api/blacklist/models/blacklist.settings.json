@@ -11,13 +11,15 @@
   },
   "attributes": {
     "sol_address": {
-      "type": "string"
+      "type": "string",
+      "index": true
     },
     "note": {
       "type": "richtext"
     },
     "created_at": {
-      "type": "datetime"
+      "type": "datetime",
+      "index": true
     }
   }
 }
