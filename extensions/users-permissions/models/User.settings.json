@@ -119,22 +119,6 @@
     },
     "updated_at": {
       "type": "datetime"
-    },
-    "wallets": {
-      "via": "user",
-      "collection": "wallet"
-    },
-    "payments": {
-      "via": "user",
-      "collection": "payment"
-    },
-    "orders": {
-      "via": "user",
-      "collection": "order"
-    },
-    "trades": {
-      "via": "staff",
-      "collection": "trade"
     }
   }
 }
