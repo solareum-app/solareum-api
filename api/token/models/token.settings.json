@@ -12,24 +12,29 @@
   },
   "attributes": {
     "token": {
-      "type": "string"
+      "type": "string",
+      "index": true
     },
     "user": {
       "via": "tokens",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "index": true
     },
     "created_at": {
-      "type": "datetime"
+      "type": "datetime",
+      "index": true
     },
     "note": {
       "type": "string"
     },
     "device_name": {
-      "type": "string"
+      "type": "string",
+      "index": true
     },
     "ip_address": {
-      "type": "string"
+      "type": "string",
+      "index": true
     }
   }
 }

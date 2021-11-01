@@ -17,5 +17,6 @@ spl-token accounts
 ```
 
 ```shell
+Transfer token to hot wallet
 spl-token transfer --fund-recipient EREAtm5y1NioFgnV2HH7CEe3ge5U8d3qaj7weFqEkWCQ 1 7Kwq7Hj6q2u2tx35zZvFHsKLseKm3Y753aQTVEcy8rtv
 ```

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/markets",
-      "handler": "market.find",
+      "path": "/purchases",
+      "handler": "purchase.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/markets/count",
-      "handler": "market.count",
+      "path": "/purchases/count",
+      "handler": "purchase.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/markets/:id",
-      "handler": "market.findOne",
+      "path": "/purchases/:id",
+      "handler": "purchase.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/markets",
-      "handler": "market.create",
+      "path": "/purchases",
+      "handler": "purchase.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/markets/:id",
-      "handler": "market.update",
+      "path": "/purchases/:id",
+      "handler": "purchase.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/markets/:id",
-      "handler": "market.delete",
+      "path": "/purchases/:id",
+      "handler": "purchase.delete",
       "config": {
         "policies": []
       }

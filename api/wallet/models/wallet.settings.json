@@ -7,40 +7,33 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "attributes": {
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "wallets"
+    "sol_address": {
+      "type": "string",
+      "required": true,
+      "index": true,
+      "unique": true
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "p2p",
-        "self_custody"
-      ]
+    "nominated_by": {
+      "type": "string",
+      "index": true
     },
-    "network": {
-      "type": "enumeration",
-      "enum": [
-        "SPL",
-        "ERC20",
-        "TRC20"
-      ]
+    "mission_completed": {
+      "type": "biginteger",
+      "index": true
     },
-    "public_key": {
-      "type": "string"
-    },
-    "hash_key": {
-      "type": "string"
+    "device_id": {
+      "type": "string",
+      "index": true
     },
     "created_at": {
-      "type": "datetime"
+      "type": "datetime",
+      "index": true
     },
-    "updated_at": {
-      "type": "datetime"
+    "source": {
+      "type": "json"
     }
   }
 }
