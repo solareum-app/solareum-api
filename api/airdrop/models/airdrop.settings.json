@@ -33,7 +33,15 @@
       "enum": [
         "airdrop",
         "referral",
-        "mission"
+        "mission",
+        "air_1",
+        "air_2",
+        "air_3",
+        "air_4",
+        "ref_1",
+        "ref_2",
+        "ref_3",
+        "ref_4"
       ]
     },
     "source": {
