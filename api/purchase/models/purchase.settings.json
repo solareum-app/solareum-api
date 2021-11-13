@@ -59,8 +59,7 @@
     },
     "release_signature": {
       "type": "string",
-      "index": true,
-      "unique": true
+      "index": true
     },
     "release_note": {
       "type": "json"
