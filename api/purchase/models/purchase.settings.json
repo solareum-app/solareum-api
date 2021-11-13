@@ -45,9 +45,9 @@
       "index": true,
       "enum": [
         "new",
-        "error",
         "processing",
-        "completed"
+        "completed",
+        "error"
       ]
     },
     "recipient": {
@@ -56,6 +56,17 @@
     },
     "source": {
       "type": "json"
+    },
+    "release_signature": {
+      "type": "string",
+      "index": true
+    },
+    "release_note": {
+      "type": "json"
+    },
+    "released_at": {
+      "type": "datetime",
+      "index": true
     },
     "created_at": {
       "type": "datetime",
