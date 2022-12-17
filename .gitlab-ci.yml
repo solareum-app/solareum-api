@@ -35,4 +35,4 @@ deploy_prod:
   script:
     - npm run deploy:prod
   only:
-    - master
+    - develop
